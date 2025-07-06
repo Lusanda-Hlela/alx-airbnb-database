@@ -44,6 +44,25 @@ This script demonstrates the use of both correlated and non-correlated subquerie
 - `subqueries.sql` – Contains SQL subquery implementations.
 - `README.md` – Documentation of queries and logic.
 
+# Aggregations and Window Functions – Airbnb Database
+
+This script includes SQL queries demonstrating how to use aggregation and window functions to analyze booking data.
+
+## Queries
+
+### 1. Total Bookings per User
+- Uses `COUNT` and `GROUP BY` to calculate how many bookings each user has made.
+- Joins `users` and `bookings` tables.
+
+### 2. Ranking Properties by Bookings
+- Uses `RANK()` window function over `COUNT(*)` to rank properties by how many bookings they’ve received.
+- `RANK()` handles ties by giving the same rank to properties with equal booking counts.
+
+## Files
+
+- `aggregations_and_window_functions.sql` – SQL script.
+- `README.md` – Documentation.
+
 ## Author
 
 - ALX Backend ProDev Student
