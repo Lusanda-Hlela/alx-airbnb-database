@@ -63,6 +63,9 @@ This script includes SQL queries demonstrating how to use aggregation and window
 - `aggregations_and_window_functions.sql` – SQL script.
 - `README.md` – Documentation.
 
+The original query was enhanced with a WHERE clause to filter bookings starting after a specific date AND with completed payments. This helps simulate more realistic usage and improves performance by reducing result size.
+
+
 ## Author
 
 - ALX Backend ProDev Student
