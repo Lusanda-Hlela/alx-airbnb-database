@@ -23,6 +23,27 @@ This script demonstrates complex SQL queries using various types of joins in the
 - `joins_queries.sql` – Contains SQL scripts.
 - `README.md` – Explanation and documentation.
 
+
+# Advanced SQL Subqueries – Airbnb Database
+
+This script demonstrates the use of both correlated and non-correlated subqueries for data analysis.
+
+## Queries
+
+### 1. Non-Correlated Subquery: Properties with Average Rating > 4.0
+- Retrieves all properties with an average rating higher than 4.0.
+- Uses a `HAVING` clause in a subquery on the `reviews` table.
+
+### 2. Correlated Subquery: Users with More Than 3 Bookings
+- Selects users who have made more than 3 bookings.
+- For each user, a subquery counts the number of bookings.
+- The inner query is dependent on each outer row (correlated).
+
+## Files
+
+- `subqueries.sql` – Contains SQL subquery implementations.
+- `README.md` – Documentation of queries and logic.
+
 ## Author
 
 - ALX Backend ProDev Student
