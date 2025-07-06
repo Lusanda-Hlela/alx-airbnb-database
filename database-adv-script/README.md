@@ -11,6 +11,8 @@ This script demonstrates complex SQL queries using various types of joins in the
 ### 2. LEFT JOIN: Properties and Reviews
 - Lists all properties, including those with no reviews.
 - Helpful for identifying unrated properties.
+- Results are ordered by property ID for consistency.
+
 
 ### 3. FULL OUTER JOIN: Users and Bookings
 - Retrieves all users and all bookings, including unlinked ones.

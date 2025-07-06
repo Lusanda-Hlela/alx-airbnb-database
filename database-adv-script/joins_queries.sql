@@ -1,4 +1,4 @@
--- INNER JOIN: Get all bookings and the users who made them
+-- INNER JOIN: Bookings and Users
 SELECT bookings.id AS booking_id,
   bookings.property_id,
   bookings.start_date,
@@ -8,17 +8,16 @@ SELECT bookings.id AS booking_id,
   users.email
 FROM bookings
   INNER JOIN users ON bookings.user_id = users.id;
-
--- LEFT JOIN: Get all properties and their reviews (if any)
+-- LEFT JOIN: Properties and Reviews (with ORDER BY)
 SELECT properties.id AS property_id,
   properties.name AS property_name,
   reviews.id AS review_id,
   reviews.rating,
   reviews.comment
 FROM properties
-  LEFT JOIN reviews ON properties.id = reviews.property_id;
-
--- FULL OUTER JOIN simulation using UNION
+  LEFT JOIN reviews ON properties.id = reviews.property_id
+ORDER BY properties.id;
+-- FULL OUTER JOIN (simulated using UNION for MySQL)
 SELECT users.id AS user_id,
   users.name,
   bookings.id AS booking_id,
