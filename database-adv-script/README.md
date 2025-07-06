@@ -55,8 +55,8 @@ This script includes SQL queries demonstrating how to use aggregation and window
 - Joins `users` and `bookings` tables.
 
 ### 2. Ranking Properties by Bookings
-- Uses `RANK()` window function over `COUNT(*)` to rank properties by how many bookings they’ve received.
-- `RANK()` handles ties by giving the same rank to properties with equal booking counts.
+- Uses `ROW_NUMBER()` window function over `COUNT(*)` to uniquely rank properties by their total number of bookings.
+- Each property receives a distinct rank, even if they have the same booking count.
 
 ## Files
 
